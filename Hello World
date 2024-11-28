@@ -1,7 +1,12 @@
 def saudacao(nome):
+    if not nome.strip():  
+        return "Olá, visitante!"  
     return f"Olá, {nome}!"
 
 def main():
     print("Hello, World!")
-    nome = input("Digite seu nome: ")
+    nome = input("Digite seu nome: ").strip()  
     print(saudacao(nome))
+
+
+main()
